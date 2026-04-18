@@ -1,8 +1,8 @@
 public class BasicMath {
     static void main() {
-        System.out.println("This is Basic math");
 //        extractionOfNumber();
-        CountDigits();
+//        CountDigits();
+        reverseNumber();
     }
 
     public static void extractionOfNumber(){
@@ -18,11 +18,24 @@ public class BasicMath {
         int number = 456789;
         int count = 0;
         while (number>0){
-            int extractedNumber = number%10;
             count++;
             number = number/10;
         }
 
         System.out.println(count);
+    }
+
+    public static void reverseNumber(){
+
+        int number = 145000;
+        int reverseNumber =0;
+        while (number>0){
+            int extractedNumber = number%10;
+            reverseNumber= (reverseNumber*10)+extractedNumber;
+            number = number/10;
+        }
+
+        System.out.println(reverseNumber);
+
     }
 }
