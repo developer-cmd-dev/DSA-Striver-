@@ -4,7 +4,7 @@ public class PrintAllDivisors {
 
     static void main() {
 
-        int x = 36;
+        int x = 45;
 
         optimised(x);
 
